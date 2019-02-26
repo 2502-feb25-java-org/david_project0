@@ -1,1 +1,3 @@
-# david_project0
+# This is the repository for David
+
+# Best of Luck!
