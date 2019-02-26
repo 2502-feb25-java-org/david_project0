@@ -1,0 +1,18 @@
+<html>
+<head>
+<script>
+function demo(){
+	if(document.getElementById("demo").value == "World")
+		alert("Hello,world");
+}
+	
+</script>
+</head>
+<body>
+<h2>Hello <span style="color:red">World</span><h2>
+<select id="demo" onchange="demo()">
+<option value="">Hello</option>
+<option value="World">World</option>
+</select>
+</body>
+</html>
