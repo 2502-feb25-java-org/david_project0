@@ -1,7 +1,7 @@
 
 
 body {
-	background-color: azure;
+	background-color: darkcyan;
 }
 
 #Java {
@@ -19,3 +19,12 @@ body {
 li{
 	color: orange;
 }
+
+table, thead, tbody,td, th {
+	border-width: 1px;
+	border-color: black;
+	border-style: solid;
+	border-radius: 0.2px;
+
+}
+
