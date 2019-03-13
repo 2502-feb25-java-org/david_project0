@@ -1,7 +1,9 @@
+// assigns canvas selection to a variable for reuse
+
 var cvs = document.getElementById("canvas");
 var ctx = cvs.getContext("2d");
 
-// load images
+// load images -- create objects and assign location of images
 
 var bird = new Image();
 var bg = new Image();
@@ -21,6 +23,8 @@ pipeSouth.src = "images/pipeSouth.png";
 var gap = 85;
 var constant;
 
+// toggles the end game alert message
+let gameEnd = false;
 var bX = 10;
 var bY = 150;
 
@@ -65,7 +69,7 @@ pipe[0] = {
     y : 0
 };
 
-// draw images
+// draws images in canvas
 
 function draw(){
     
@@ -77,8 +81,10 @@ function draw(){
         constant = pipeNorth.height+gap;
         ctx.drawImage(pipeNorth,pipe[i].x,pipe[i].y);
         ctx.drawImage(pipeSouth,pipe[i].x,pipe[i].y+constant);
-             
+        
+        //draws the pipes along the x-axis
         pipe[i].x--;
+        //pipe[i].y++;
         
         if( pipe[i].x == 125 ){
             pipe.push({
@@ -88,9 +94,17 @@ function draw(){
         }
 
         // detect collision
+        /* floor and ceiling
+        *  pipe obstacles 
+        *  determines if the coordinates of the pipes, floor or ceiling are being entered by the motorcycle
+        */ 
         
         if( bX + bird.width >= pipe[i].x && bX <= pipe[i].x + pipeNorth.width && (bY <= pipe[i].y + pipeNorth.height || bY+bird.height >= pipe[i].y+constant) || bY + bird.height >=  cvs.height - fg.height){
-            alert("Your motorcycle has crashed! Remember to wear a helmet.")
+           
+           if(!gameEnd){
+               alert("You have crashed! Be sure to wear a helmet!")
+               gameEnd = true;
+           }
             location.reload(); // reload the page
         }
         

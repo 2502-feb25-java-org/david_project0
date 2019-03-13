@@ -52,3 +52,7 @@ function valid() {
         alert('ERROR.');
     }
 }
+
+function message(){
+    alert("Your feedback is appreciated!");
+}
