@@ -1,0 +1,25 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - ReflectionDemo",
+            "request": "launch",
+            "mainClass": "com.revature.ReflectionDemo",
+            "projectName": "CollectionsAPI"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - MainClass",
+            "request": "launch",
+            "mainClass": "com.revature.MainClass",
+            "projectName": "CollectionsAPI"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - App",
+            "request": "launch",
+            "mainClass": "com.revature.App",
+            "projectName": "CollectionsAPI"
+        }
+    ]
+}

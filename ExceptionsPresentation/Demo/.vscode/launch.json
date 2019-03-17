@@ -1,0 +1,53 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Maps",
+            "request": "launch",
+            "mainClass": "com.checked.Maps",
+            "projectName": "Demo"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - ArithmException",
+            "request": "launch",
+            "mainClass": "com.unchecked.ArithmException",
+            "projectName": "Demo"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - ArithmeticException",
+            "request": "launch",
+            "mainClass": "com.unchecked.ArithmeticException",
+            "projectName": "Demo"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Solutions",
+            "request": "launch",
+            "mainClass": "com.stacked.Solutions",
+            "projectName": "Demo"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - HandlingChecked",
+            "request": "launch",
+            "mainClass": "com.checked.HandlingChecked",
+            "projectName": "Demo"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - InvalidArrayIndex",
+            "request": "launch",
+            "mainClass": "com.except.InvalidArrayIndex",
+            "projectName": "Demo"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - App",
+            "request": "launch",
+            "mainClass": "com.except.App",
+            "projectName": "Demo"
+        }
+    ]
+}

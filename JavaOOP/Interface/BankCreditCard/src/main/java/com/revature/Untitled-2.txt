@@ -1,0 +1,7 @@
+int a = 20;
+Integer i = Integer.valueOf(a); //conversion of int to Integer, transferring from stack to heap
+Integer j = a; //autoboxing
+System.out.println(i);
+
+Integer x = new Integer(10);
+int y = x; //unboxing

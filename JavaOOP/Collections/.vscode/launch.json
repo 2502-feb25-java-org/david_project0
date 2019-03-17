@@ -1,0 +1,28 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - MultiMatrix",
+            "request": "launch",
+            "mainClass": "MultiMatrix"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Matrix",
+            "request": "launch",
+            "mainClass": "Matrix"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - MyMatrix",
+            "request": "launch",
+            "mainClass": "MyMatrix"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Coll",
+            "request": "launch",
+            "mainClass": "Coll"
+        }
+    ]
+}

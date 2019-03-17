@@ -1,0 +1,18 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Notes",
+            "request": "launch",
+            "mainClass": "com.revature.Notes",
+            "projectName": "BankCreditCard"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - App",
+            "request": "launch",
+            "mainClass": "com.revature.App",
+            "projectName": "BankCreditCard"
+        }
+    ]
+}

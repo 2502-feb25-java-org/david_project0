@@ -108,6 +108,7 @@ function draw(){
             location.reload(); // reload the page
         }
         
+        //increments the score 
         if(pipe[i].x == 5){
             score++;
             scor.play();

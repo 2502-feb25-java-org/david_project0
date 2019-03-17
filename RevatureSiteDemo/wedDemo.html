@@ -43,7 +43,7 @@
                                 <a class="dropdown-item" href="Login.html">LogIn(Existing User)</a>
                                 <a class="dropdown-item" href="wedDemo.html">SignUp(New User)</a>
                                 <div class="dropdown-divider"></div>
-                                <a class="dropdown-item" href="#AdminLogIn">Admin LogIn</a>
+                                <a class="dropdown-item" href="admin.html">Admin LogIn</a>
                               </div>
                             </li>
                            
@@ -79,9 +79,7 @@
                     <div class="form-group">
                         <input placeholder="Last Name" type="text" id="ln" onchange="values('ln'); namecheck()" class="form-control" name="ln" required>
                     </div>
-                    <!-- </div> -->
-                    <!-- <div class="row"> -->
-                    <!-- <div class="col-sm-6"> -->
+                   
                     <div class="form-group">
                         <label for="email">Enter your email: </label>
                     </div>
@@ -89,9 +87,7 @@
                     <div class="form-group">
                         <input type="email" class="form-control"  name="email" id="email" required>
                     </div>
-                    <!-- </div> -->
-                    <!-- <div class="row"> -->
-                    <!-- <div class="col-sm-6"> -->
+                   
                     <div class="form-group">
                         <label for="password">Enter your password: </label>
                     </div>
@@ -100,8 +96,7 @@
                         <input type="password" class="form-control"  name="password" id="pw" required>
                         <!-- </div> -->
                     </div>
-                    <!-- <div class="row"> -->
-                    <!-- <div class="col-sm-6"> -->
+                   
                     <div class="form-group">
                         <label for="phone">Enter your Phone: </label>
                     </div>
@@ -125,6 +120,16 @@
                             <label for="others">Others<input type="radio" name="gender" id="here" /></label>
                         </label>
                     </div>
+                    <div class="form-group">
+                        <label for="address">Enter your Address: </label>
+                    </div>
+                    <div class="form-group">
+                        Address: <input type="text" onchange="values('addr')" name="addr" id="addr" required>
+                        City:  <input type="text"  onchange="values('city')" name="city" id="city" required>
+                        State: <input type="text"  onchange="values('state')" name="state" id="state" required>
+                        Zip<input type="number"  onchange="values('zip')" name="zip" id="zip" required><br>
+                    </div>
+                   
                 </fieldset>
                
                     <input type="button" onclick="store()" value="Submit">
@@ -160,6 +165,9 @@
         crossorigin="anonymous"></script>
         <script src="./Scripts/new.js"></script>
         <script src="run.js"></script>
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCkUOdZ5y7hMm0yrcCQoCvLwzdM6M8s5qk&libraries=places&callback=initAutocomplete"
+        async defer></script>
+        <script src="./Scripts/geo.js"></script>
 </body>
 
 </html>
