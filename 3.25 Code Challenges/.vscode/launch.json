@@ -1,0 +1,16 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - CustomCollect",
+            "request": "launch",
+            "mainClass": "CustomCollect"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - HexConverter",
+            "request": "launch",
+            "mainClass": "HexConverter"
+        }
+    ]
+}

@@ -1,0 +1,23 @@
+single page applications with servlets \
+
+redirecting and forwarding, two ways to move b/t resources
+
+redirecting: good for log in functionally, changes url 
+             creates a new req/rep body
+
+forwarding: url does not change, returns original req, resp
+            uses request dispatcher
+
+
+thread pooling and appending a user to a session 
+remove and invalidate session
+ways of maintaining state
+
+session objects 
+json webtoken sent back and forth b/t request and response
+to help wtih maintaining application state s3-bucket
+
+js index wrapparound with negative numbers
+
+onblur functionality and focus on click out to disable button
+until all fields are full

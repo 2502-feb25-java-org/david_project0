@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+</head>
+<body>
+    
+    <h4>Items to Buy:</h4>
+    <h3>To Buy List</h3>    
+    <input type="text" id="newItem" class="form-control col-4" placeholder="new Item.."/>
+    <button id="add" class="btn btn-primary">Add Item</button>
+    <br><br><br>
+    <ul id="toBuy">
+        <li>ribs</li>
+        <li>wine</li>
+        <li>salad</li>
+    </ul>
+
+    <hr>
+    <h4>Bought Items</h4>
+    <ul id="bought"></ul>
+
+    <script>
+        window.onload = function(){
+            $('#add').on('click', function(){
+                var text = $('#newItem').val();
+                var listItem = $(`<li>${text}</li>`);
+                //var boughtItem = $(`<li>${text}</li>`);
+
+                //$('#toBuy').append(listItem);
+
+                $('#toBuy').append(listItem);
+                $('#newItem').val(''); //clears the input field after submitting the new item
+                
+            });
+
+            $('#toBuy').on('click','li',function(){ //the even listener is on the list itself and not on each item
+                $('#bought').append(this)
+            })
+        }
+    </script>
+</body>
+</html>
