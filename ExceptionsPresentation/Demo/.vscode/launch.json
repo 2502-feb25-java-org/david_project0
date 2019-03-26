@@ -2,6 +2,34 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - HelloWorld",
+            "request": "launch",
+            "mainClass": "com.checked.HelloWorld",
+            "projectName": "Demo"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - InvalidArrayIndex",
+            "request": "launch",
+            "mainClass": "com.unchecked.InvalidArrayIndex",
+            "projectName": "Demo"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - StackDemo",
+            "request": "launch",
+            "mainClass": "com.stacked.StackDemo",
+            "projectName": "Demo"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - MoreChecked",
+            "request": "launch",
+            "mainClass": "com.checked.MoreChecked",
+            "projectName": "Demo"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - Maps",
             "request": "launch",
             "mainClass": "com.checked.Maps",

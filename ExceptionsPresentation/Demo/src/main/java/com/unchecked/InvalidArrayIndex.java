@@ -10,8 +10,8 @@ public class InvalidArrayIndex {
 
 	public static void main(String[] args) {
 		int myArray[] = {0, 1, 2, 3, 4, 5};
-
-		System.out.println(myArray[10]);
+		
+		System.out.println(myArray[10]);	
 
     //As there’s nothing at index 10, the above code example throws ArrayIndexOutOfBoundsException:
     //The most frequent unchecked exception is called NullPointerException. 
